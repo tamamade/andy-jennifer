@@ -44,8 +44,8 @@ body {
 #openner {
   height: 100vh;
   position: fixed;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.436) 0%, rgba(0, 0, 0, 0.822) 100%),
-    url(assets/img/openner-bg.jpg);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(231, 231, 231, 0.76) 100%),
+    url(assets/img/openner-bg-1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -94,7 +94,7 @@ body {
   width: 100%;
   height: 100%;
   position: absolute;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.436) 0%, rgb(0, 0, 0) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(192, 192, 192, 0.76) 100%);
   bottom: 0;
 }
 
@@ -118,15 +118,19 @@ body {
   position: absolute;
   animation: rotation-mandala 20s infinite linear;
   z-index: 1;
+  filter: invert();
 }
 .header-decoration-right {
   position: absolute;
   animation: rotation-mandala 20s infinite reverse linear;
   z-index: 1;
+  filter: invert();
 }
 
 #pengantin {
-  background: radial-gradient(116.09% 189.76% at 50.01% 50.02%, #161621 0%, #000000 69.58%);
+  background-image: url(assets/img/bg-white-mobile.jpg);
+  background-position: center;
+  background-size: cover;
   padding-bottom: 95px;
 }
 
@@ -247,7 +251,9 @@ body {
 }
 
 .detail-lokasi {
-  background: radial-gradient(116.09% 189.76% at 50.01% 50.02%, #161621 0%, #000000 69.58%);
+  background-image: url(assets/img/bg-hari.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .detail-lokasi .container {
@@ -272,7 +278,9 @@ body {
 }
 
 #foto-nikah {
-  background: radial-gradient(116.09% 189.76% at 50.01% 50.02%, #161621 0%, #000000 69.58%);
+  background-image: url(assets/img/bg-white.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .decor-foto-nikah {
@@ -283,6 +291,7 @@ body {
   text-align: center;
   font-family: Afterglow Regular;
   font-size: 2.6rem;
+  text-shadow: 0px 1px 1px #0000006e;
   color: var(--primary-gold);
 }
 
@@ -300,7 +309,7 @@ body {
 }
 
 #pesan {
-  background: radial-gradient(116.09% 189.76% at 50.01% 50.02%, #161621 0%, #000000 69.58%);
+  background: radial-gradient(116.09% 189.76% at 50.01% 50.02%, #f7f7ff 0%, #ffffff 69.58%);
   padding-top: 35px;
 }
 
@@ -322,6 +331,7 @@ body {
   border-radius: 12px;
   position: relative;
   width: 100%;
+  box-shadow: 2px 5px 20px #d9d9d9;
 }
 
 .message::before {
@@ -472,6 +482,14 @@ footer p {
 @media (min-width: 768px) {
   .maps {
     height: 100%;
+  }
+
+  #pengantin {
+    background-image: url(assets/img/bg-white.jpg);
+  }
+
+  #foto-nikah {
+    background-image: url(assets/img/bg-white.jpg);
   }
 }
 
