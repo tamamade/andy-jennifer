@@ -378,6 +378,11 @@ footer p {
   border: none;
 }
 
+.form-select:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 226, 5, 0.5) !important;
+  border: none;
+}
+
 .nama-mepandes {
   font-family: Afterglow Regular;
   line-height: 1.5em;

@@ -1,4 +1,5 @@
-const scriptURLPost = "https://script.google.com/macros/s/AKfycbwzglfQcqwTZlCRClA656ks4OpLt98XKhuPRIunzbi77f6Ci98pFtpONHGd5sugykNz/exec";
+const scriptURLPost =
+  "https://script.google.com/macros/s/AKfycbwzglfQcqwTZlCRClA656ks4OpLt98XKhuPRIunzbi77f6Ci98pFtpONHGd5sugykNz/exec";
 const form = document.forms["titip-pesan"];
 const btnKirim = document.querySelector(".btn-kirim");
 const btnLoading = document.querySelector(".btn-loading");
@@ -47,7 +48,9 @@ function maker(data) {
                   <img src="assets/img/user-icon.svg" width="50px" />
                 </div>
                 <div class="message ms-1">
-                  <p class="fw-bolder">${message.nama}</p>
+                  <p class="fw-bolder">${message.nama} <span class="text-secondary" style="font-size:0.8rem">(${
+      message.kehadiran == "hadir" ? "Hadir" : "Tidak Hadir"
+    })</span></p>
                   <p>${message.pesan}</p>
                 </div>
               </div>
